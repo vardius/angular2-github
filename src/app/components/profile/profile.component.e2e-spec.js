@@ -1,9 +1,5 @@
-(function() {
-  "use-strict";
-
-  describe('Profile', () => {
-    beforeEach(() => {
-      browser.get('/');
-    });
+describe('Profile', () => {
+  beforeEach(() => {
+    browser.get('/');
   });
-})();
+});
