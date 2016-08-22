@@ -1,10 +1,14 @@
-describe('Navbar', () => {
+(function() {
+  "use-strict";
+
+  describe('Navbar', () => {
     beforeEach(() => {
-        browser.get('/');
+      browser.get('/');
     });
 
     it('should have <nav>', () => {
-        let navbar = element(by.css('nav'));
-        expect(home.isPresent()).toEqual(true);
+      let navbar = element(by.css('nav'));
+      expect(home.isPresent()).toEqual(true);
     });
-});
+  });
+})();
