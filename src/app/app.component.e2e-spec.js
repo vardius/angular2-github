@@ -1,12 +1,12 @@
-describe('App Tests', function () {
+"use strict";
 
-    let expectedMsg = 'Spotify App';
-
+describe('App Tests', () => {
     beforeEach(function () {
         browser.get('');
     });
 
-    it('should display: ' + expectedMsg, function () {
-        expect(element(by.css('title')).getText()).toEqual(expectedMsg);
+    it('should have <div class="main">', () => {
+        let main = element(by.css('div.main'));
+        expect(main.isPresent()).toEqual(true);
     });
 });
