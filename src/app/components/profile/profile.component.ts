@@ -4,8 +4,7 @@ import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  templateUrl: './profile.component.html'
 })
 export class ProfileComponent {
   user = [];

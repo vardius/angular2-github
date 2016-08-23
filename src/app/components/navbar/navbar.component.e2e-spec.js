@@ -1,10 +1,10 @@
 describe('Navbar', () => {
-  beforeEach(() => {
-    browser.get('/');
-  });
+    beforeEach(() => {
+        browser.get('/');
+    });
 
-  it('should have <nav>', () => {
-    let navbar = element(by.css('nav'));
-    expect(home.isPresent()).toEqual(true);
-  });
+    it('should have <nav>', () => {
+        let navbar = element(by.css('nav'));
+        expect(navbar.isPresent()).toEqual(true);
+    });
 });

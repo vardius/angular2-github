@@ -1,17 +1,12 @@
-describe('App', () => {
-  beforeEach(() => {
-    browser.get('/');
-  });
+describe('App Tests', function () {
 
-  it('should have a title', () => {
-    expect(browser.getTitle()).toEqual("GithubSearch");
-  });
+    let expectedMsg = 'Spotify App';
 
-  it('should have <header>', () => {
-    expect(element(by.css('my-app header')).isPresent()).toEqual(true);
-  });
+    beforeEach(function () {
+        browser.get('');
+    });
 
-  it('should have <navbar>', () => {
-    expect(element(by.css('my-app navbar')).isPresent()).toEqual(true);
-  });
+    it('should display: ' + expectedMsg, function () {
+        expect(element(by.css('title')).getText()).toEqual(expectedMsg);
+    });
 });
