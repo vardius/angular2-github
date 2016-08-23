@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
-import {GithubService} from '../../services/github.service';
+import { FORM_DIRECTIVES } from '@angular/forms';
+import {HTTP_PROVIDERS} from '@angular/http';
 import 'rxjs/add/operator/map';
+import {GithubService} from '../../services/github.service';
 
 @Component({
   selector: 'profile',
-  templateUrl: './profile.component.html'
+  templateUrl: './profile.component.html',
+  directives: [FORM_DIRECTIVES],
+  providers: [HTTP_PROVIDERS, GithubService]
 })
 export class ProfileComponent {
   user = [];
